@@ -1,12 +1,6 @@
 {
   "name": "@matt.kantor/option",
   "version": "0.0.0",
-  "type": "module",
-  "main": "dist/index.js",
-  "scripts": {
-    "clean": "rm -rf dist *.tsbuildinfo",
-    "build": "tsc --build"
-  },
   "dependencies": {
     "@matt.kantor/option-tag-symbol": "*"
   },
@@ -15,5 +9,11 @@
   },
   "files": [
     "dist/*"
-  ]
+  ],
+  "main": "dist/index.js",
+  "scripts": {
+    "clean": "rm -rf dist *.tsbuildinfo",
+    "build": "tsc --build"
+  },
+  "type": "module"
 }
