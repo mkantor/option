@@ -1,6 +1,6 @@
 {
   "name": "@matt.kantor/option",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "dependencies": {
     "@matt.kantor/option-tag-symbol": "*"
   },
