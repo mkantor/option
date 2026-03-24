@@ -12,7 +12,10 @@
   ],
   "license": "MIT",
   "main": "dist/index.js",
-  "repository": "github:mkantor/option",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkantor/option.git"
+  },
   "scripts": {
     "clean": "rm -rf dist *.tsbuildinfo",
     "build": "tsc --build"
