@@ -50,12 +50,12 @@ export const map = <Value, NewValue>(
 export const sequence = <const Options extends readonly Option<unknown>[]>(
   options: Options,
 ): SequenceOutput<Options> => {
-  const firstOption = options[0]
+  const [firstOption, ...remainingOptions] = options
 
   const returnValue =
     firstOption === undefined
       ? makeSome([])
-      : options.reduce<
+      : remainingOptions.reduce<
           // Unfortunately TypeScript doesn't keep track of the specific value
           // types in the `Options` type parameter—instead it falls back to the
           // concrete constraint type.
