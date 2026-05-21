@@ -5,6 +5,7 @@
     "@matt.kantor/option-tag-symbol": "*"
   },
   "devDependencies": {
+    "@types/node": "^25.9.1",
     "typescript": "^6.0.2"
   },
   "files": [
@@ -18,7 +19,9 @@
   },
   "scripts": {
     "clean": "rm -rf dist *.tsbuildinfo",
-    "build": "tsc --build"
+    "build": "tsc --build",
+    "build:tests": "tsc --project tsconfig.lib.json --outDir dist-test --declarationDir dist && tsc --build tsconfig.test.json",
+    "test": "npm run build:tests && node --test --no-experimental-strip-types"
   },
   "type": "module"
 }
