@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "exactOptionalPropertyTypes": true,
+    "module": "node16",
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "rootDir": "./src",
+    "skipLibCheck": true,
+    "target": "es2020",
+    "verbatimModuleSyntax": true
+  }
+}
